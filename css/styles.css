@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+/* color palette: https://coolors.co/c9cba3-ffe1a8-e26d5c-723d46-472d30 */
 
 /* prevent overflow */
 img, embed, object, video {
@@ -57,7 +58,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: #ccc;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
@@ -124,7 +125,7 @@ nav h1 a {
 .filter-options {
   width: 100%;
   height: 70px;
-  background-color: #3397DB;
+  background-color: #e26d5c;/*#3397DB;*/
   align-items: center;
   padding: 10px;   
 }
@@ -175,7 +176,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #723d46; /*#f18200;*/
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -228,7 +229,7 @@ nav h1 a {
   max-width: calc(50% - 50px);
 }
 #restaurant-name {
-  color: #f18200;
+  color: #723d46;/*#f18200;*/
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -260,13 +261,13 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  width: calc(50% - 30px);
 }
 #reviews-container {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: #723d46; /*#f58500;*/
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
@@ -285,7 +286,7 @@ nav h1 a {
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: 50%;
+  width: calc(100% - 80px);
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -301,7 +302,11 @@ nav h1 a {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
+.filter-options{
+    height: 120px;
+}
+    
 #restaurants-list li {
     margin: 10px;
     min-height: 150px;
@@ -310,9 +315,10 @@ nav h1 a {
     padding: 0 0 0;
   width: calc(100% - 20px); 
 }
+    
 #restaurants-list .restaurant-img {
   max-width: 100%;
-  min-height: 200px;
+  min-height: 40wh;
   min-width: 100%;
 }
 
@@ -329,10 +335,11 @@ nav h1 a {
 #restaurants-list li h1 {
   margin: 0 0 0;
 }
+    
 
 }
 
-@media screen and (min-width: 451px) and (max-width: 600px) {
+@media screen and (min-width: 461px) and (max-width: 600px) {
 #restaurants-list li {
     margin: 10px;
     min-height: 150px;

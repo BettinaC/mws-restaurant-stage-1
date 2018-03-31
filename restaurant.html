@@ -14,13 +14,13 @@
 
 <body class="inside">
   <!-- Beginning header -->
-  <header>
+  <header> 
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/"><i class="fas fa-utensils"> </i> Restaurant Reviews</a></h1>
+      <h1><a href="/"><i class="fas fa-utensils"></i> <i class="fas fa-comments"></i><br> Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" role="menu" >
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -32,7 +32,7 @@
   <main id="maincontent">
     <!-- Beginning map -->
    <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
@@ -64,7 +64,7 @@
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcHMbhYaK6XtYX-GRRKvZjco-ITDhLS9s&libraries=places&callback=initMap"></script>
   <!-- End scripts -->
 
 </body>
